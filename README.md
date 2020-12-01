@@ -14,7 +14,7 @@
 ## How to Use
 
 - `test_naver_ner.py` 참고
-- `str`, `List[str]` 모두 가능
+- pipeline input으로 `str`, `List[str]` 모두 가능
 - device 지정 가능 (cpu: -1)
 - `ignore_labels=[]`로 세팅하면 `O` 라벨이 달린 것도 모두 볼 수 있음
 
