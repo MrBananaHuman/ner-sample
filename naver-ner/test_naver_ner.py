@@ -5,7 +5,7 @@ from pprint import pprint
 tokenizer = ElectraTokenizer.from_pretrained("monologg/koelectra-base-v3-naver-ner")
 model = ElectraForTokenClassification.from_pretrained("monologg/koelectra-base-v3-naver-ner")
 
-ner = NerPipeline(model=model, tokenizer=tokenizer, ignore_labels=["O"], ignore_special_tokens=True, device=1)
+ner = NerPipeline(model=model, tokenizer=tokenizer, ignore_labels=["O"], ignore_special_tokens=True, device=-1)
 
 texts = [
     "문재인 대통령은 28일 서울 코엑스에서 열린 ‘데뷰 (Deview) 2019’ 행사에 참석해 젊은 개발자들을 격려하면서 우리 정부의 인공지능 기본구상을 내놓았다. 출처 : 미디어오늘 (http://www.mediatoday.co.kr)",
