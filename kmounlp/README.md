@@ -1,4 +1,4 @@
-# kmounnlp NER
+# kmounlp NER
 
 [한국해양대 NER](https://github.com/kmounlp/NER)
 
