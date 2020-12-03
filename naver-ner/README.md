@@ -28,7 +28,7 @@ model = ElectraForTokenClassification.from_pretrained("monologg/koelectra-base-v
 
 ner = NerPipeline(model=model, tokenizer=tokenizer, ignore_labels=["O"], ignore_special_tokens=True, device=-1)
 
-text = "문재인 대통령은 28일 서울 코엑스에서 열린 ‘데뷰 (Deview) 2019’ 행사에 참석해 젊은 개발자들을 격려하면서 우리 정부의 인공지능 기본구상을 내놓았다. 출처 : 미디어오늘 (http://www.mediatoday.co.kr)"
+text = "2009년 7월 FC서울을 떠나 잉글랜드 프리미어리그 볼턴 원더러스로 이적한 이청용은 크리스탈 팰리스와 독일 분데스리가2 VfL 보훔을 거쳐 지난 3월 K리그로 컴백했다. 행선지는 서울이 아닌 울산이었다"
 pprint(ner(text))
 
 # Out
