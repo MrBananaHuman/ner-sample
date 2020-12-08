@@ -2,10 +2,10 @@
 
 ## Requirements
 
-torch==1.7.0
-transformers==3.5.1
-cython
-kss==1.3.1
+- torch==1.7.0
+- transformers==3.5.1
+- cython
+- kss==1.3.1
 
 ## How to use
 
